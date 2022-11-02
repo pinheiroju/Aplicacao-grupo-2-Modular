@@ -12,8 +12,8 @@
 
 ## Aplicações
 
-### 1 Sistema de consulta universitária
+1. Sistema de consulta universitária
 
-### 2 Sistema de consulta de uma biblioteca
+2. Sistema de consulta de uma biblioteca
 
-### 3 Sistema de aluguel de computadores
+3. Sistema de aluguel de computadores
