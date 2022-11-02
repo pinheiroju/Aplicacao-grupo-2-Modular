@@ -3,8 +3,8 @@
 ## Componentes reutilizáveis
 ### 1: Sistema de Login
 
-login_basico: https://medium.com/@moinahmedbgbn/a-basic-login-system-with-python-746a64dc88d6
-login_interface: https://www.simplifiedpython.net/python-gui-login/
+- login_basico: https://medium.com/@moinahmedbgbn/a-basic-login-system-with-python-746a64dc88d6
+- login_interface: https://www.simplifiedpython.net/python-gui-login/
 
 
 ### 2: Sistema de busca
