@@ -1,5 +1,3 @@
-#https://www.simplifiedpython.net/python-gui-login/
-
 #import modules
  
 from tkinter import *
