@@ -1,11 +1,3 @@
-
-
-###########
-
-#https://medium.com/@moinahmedbgbn/a-basic-login-system-with-python-746a64dc88d6
-
-############
-
 import hashlib
 def signup():
     email = input("Enter email address: ")
