@@ -12,20 +12,7 @@ na main 1 enviara mensagem de erro "login ou senha invalido"
 0 entrara na aplicacao*/
 // recebe da busca 0 se existe e 1 se nao existe
 
-/* manda arquivo ja aberto que contem todos os logins ja cadastrados */
-
-
-FILE *openFile(const char *file, const char *mode)
-{
-    FILE *arq = fopen(file, mode);
-    if (arq == NULL)
-    {
-        printf("Arquivo nao encontrado\n");
-        exit(1);
-    }
-    return arq;
-}
-
+// manda arquivo ja aberto que contem todos os logins ja cadastrados
 // para testar 
 
 int buscaArq(FILE *arq, char *usuario, char *senha)
