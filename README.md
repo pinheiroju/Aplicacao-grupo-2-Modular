@@ -7,6 +7,22 @@
 - login_interface: https://www.simplifiedpython.net/python-gui-login/
 
 
+
+
+
+  1. Modelo
+```mermaid
+  graph TD;
+      sau-->menuSau.c;
+      sau-->menuLogin.c;
+      menuSau.c-->sauNotas.c;
+      menuSau.c-->sauHorarios.c;
+      menuLogin.c-->login.c;
+      menuLogin.c-->cadastro.c;
+      menuLogin.c-->trocaSenha.c;
+      
+```
+
 2. Sistema de busca
 
 
@@ -17,3 +33,5 @@
 2. Sistema de consulta de uma biblioteca
 
 3. Sistema de aluguel de computadores
+
+
