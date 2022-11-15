@@ -26,8 +26,8 @@ char* fazLogin(int tipo_usuario, int *check)
     matr = (char*)malloc(sizeof(char)*TAMUSU);
     char nomeArq[100];
     printf("Voce deseja :\n");
-    printf("1. Fazer login\t");
-    printf("2. Fazer cadastro\t");
+    printf("1. Fazer login\n");
+    printf("2. Fazer cadastro\n");
     printf("3. Trocar senha\n");
     scanf("%d", &opcao);
     if(tipo_usuario == 1)
