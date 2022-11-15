@@ -12,28 +12,24 @@ na main 1 enviara mensagem de erro "login ou senha invalido"
 0 entrara na aplicacao*/
 // recebe da busca 0 se existe e 1 se nao existe
 
-// manda arquivo ja aberto que contem todos os logins ja cadastrados
+// manda arquivo ja aberto que contem todos os logins ja cadastrados 
 // para testar 
 
 int buscaArq(FILE *arq, char *usuario, char *senha)
 {
-    int cmp1, cmp2; // pega retorno de strcmp 
+    int cmp; // pega retorno de strcmp 
     char usuarioArq[TAMUSU], senhaArq[TAMSE];
     while (!feof(arq))
     {
-        fscanf(arq, "login: %[^,], senha: %[^\n]\n", usuarioArq, senhaArq);
-        cmp1 = strcmp(usuario, usuarioArq);
+        fscanf(arq, "%[^,], %[^\n]\n", usuarioArq, senhaArq);
+        cmp = strcmp(usuario, usuarioArq);
         // primeiro procuro usuario
-        if (cmp1 == 0)
+        if (cmp == 0)
         {
-            cmp2 = strcmp(senha, senhaArq);
-            if (cmp2 == 0)
+            cmp = strcmp(senha, senhaArq);
+            if (cmp == 0)
                 return 0;
         }
     }
-    if (cmp1 == 0)
-        printf("Senha invalida\n");
-    else 
-        printf("Usuario invalido\n");
     return 1;
 }
