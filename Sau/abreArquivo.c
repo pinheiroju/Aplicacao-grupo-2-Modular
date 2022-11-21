@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "abreArquivo.h"
 
+
 FILE *openFile(const char *file, const char *mode)
 {
     FILE *arq = fopen(file, mode);
