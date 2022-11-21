@@ -5,9 +5,7 @@
 #define TAMUSU 21
 #define TAMSE 15
 
-// retorna 1 para cadastrado com sucesso
-// retorna 2 se usuario e senha ja estao cadastrados
-// retorna 0 caso ja exista usuario com outra senha
+
 int cadastrar(char *nomeArq, char *usuario, char *senha)
 {
     // primeiro busco para ver se ja nao existe
