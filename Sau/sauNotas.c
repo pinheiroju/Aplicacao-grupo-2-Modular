@@ -47,10 +47,6 @@ void consultaNotasAlun(char* matr)
 
 void consultaNotasProf(char* matr)
 {
-    // procurar pela matricula do professor quais materias
-    // ele leciona 
-    // perguntar dentre as materias que ele leciona qual 
-    // delas ele quer ver as notas
     FILE* arq = openFile(ARQDISC, "r");
     char mat[TAMUSU], disc[TAMDISC], hora[TAMHOR];
     char vetorDisc[NUMDISC][TAMDISC];
@@ -62,7 +58,7 @@ void consultaNotasProf(char* matr)
     {
         fscanf(arq, "%[^,], %[^,], %[^\n]\n", mat, disc, hora);
         cmp = strcmp(matr, mat);
-        if(cmp == 0) // achei matricula do professot
+        if(cmp == 0) // achei matricula do professor
         {
             strcpy(vetorDisc[i], disc); // copio disc para o vetor
             i++;
@@ -74,7 +70,7 @@ void consultaNotasProf(char* matr)
     // se nao existem disciplinas no vetor
     if(i==0)
     {
-        printf("Nao ha notas para esse disciplina\n");
+        printf("Nao ha notas para essa disciplina\n");
         return;
     }
     // mostro todas as disciplinas
