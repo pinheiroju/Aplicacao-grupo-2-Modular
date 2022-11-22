@@ -5,11 +5,10 @@
  * @param {char *usuario} Matrícula inserida pelo usuário.
  * @param {char *senha} Senha inserida pelo usuário.
  * @returns {int} 0: caso encontrar; 1: caso não encontrar.
+ * 
+ * OBS: na main
+ * 1: enviara mensagem de erro "login ou senha invalido"
+ * 0: entrara na aplicacao
  */
-
-/*
-na main
- 1: enviara mensagem de erro "login ou senha invalido"
- 0: entrara na aplicacao*/
  
  int buscaArq(FILE *arq, char *usuario, char *senha);
