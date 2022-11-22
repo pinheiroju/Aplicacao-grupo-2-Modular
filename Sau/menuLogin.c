@@ -14,9 +14,6 @@
 #define ARQUSU "cadastroSauUsu.txt"
 #define ARQFUNC "cadastroSauFunc.txt"
 
-// faz login de usuario ou cadastra
-// plataforma desejada vai chamar esse modulo
-// check serve para saber se pessoa conseguiu fazer login
 
 char* fazLogin(int tipo_usuario, int *check)
 {

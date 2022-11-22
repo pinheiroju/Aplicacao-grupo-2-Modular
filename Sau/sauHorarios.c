@@ -8,9 +8,6 @@
 #define TAMDISC 81
 #define TAMHORA 6
 
-// formato do arquivo 
-// mat, disci, horario 
-// char, char, char
 
 // funcao recebe matricula
 void verHor(int tipo_usuario, char* matr)
